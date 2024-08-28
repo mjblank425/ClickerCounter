@@ -19,7 +19,9 @@ class MainActivity : ComponentActivity() {
 
     private var counter = 0
     private lateinit var counterTextView: TextView
-    private lateinit var incrementButton: Button
+    private lateinit var increment1Button: Button
+    private lateinit var increment5Button: Button
+    private lateinit var increment10Button: Button
     private lateinit var resetButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,12 +29,22 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
         counterTextView = findViewById(R.id.counterTextView)
-        incrementButton = findViewById(R.id.incrementButton)
+        increment1Button = findViewById(R.id.increment1Button)
+        increment5Button = findViewById(R.id.increment5Button)
+        increment10Button = findViewById(R.id.increment10Button)
         resetButton = findViewById(R.id.resetButton)
 
 
-        incrementButton.setOnClickListener {
+        increment1Button.setOnClickListener {
             counter++
+            counterTextView.text = counter.toString()
+        }
+        increment5Button.setOnClickListener {
+            counter=counter+5
+            counterTextView.text = counter.toString()
+        }
+        increment10Button.setOnClickListener {
+            counter=counter+10
             counterTextView.text = counter.toString()
         }
 

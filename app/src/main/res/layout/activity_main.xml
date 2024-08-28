@@ -11,10 +11,10 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="0"
-        android:textSize="60sp" />
+        android:textSize="78sp" />
 
     <Button
-        android:id="@+id/incrementButton"
+        android:id="@+id/increment1Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/counterTextView"
@@ -22,11 +22,30 @@
         android:layout_marginTop="20dp"
         android:text="Increment by 1" />
 
+
+    <Button
+        android:id="@+id/increment5Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/increment1Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Increment by 5" />
+
+    <Button
+        android:id="@+id/increment10Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/increment5Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Increment by 10" />
+
     <Button
         android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/incrementButton"
+        android:layout_below="@id/increment10Button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Reset Counter" />
